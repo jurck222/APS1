@@ -1,0 +1,50 @@
+Nekaj primerov izvajanja operacij:
+
+> 0 -12 103 3131 -100 53 111 dup2 0 reverse 0 print
+111 53 111 53 -100 3131 103 -12 0
+
+> 41051 141 + echo -100 50 - echo
+41192
+-150
+
+> 5 11 17 + + 10 * 0 print
+330
+
+> 5 ! echo even 0 print
+120
+1
+
+> 70 90 rnd echo char echo
+66
+B
+
+> 0 1 2 3 4 4 1 fun dup 0 reverse swap 2 2 move 0 print 1 print 2 print
+0 1 2
+dup 0 reverse swap
+4 3
+
+> 0 1 2 3 1 fun 0 reverse dup 1 run 0 print 2 1 loop 0 print
+2 1 0 0 
+
+2 2 1 0 0 0
+
+> 5 3 1 2 5 1 fun == then ?dup2 else ?+ 1 run 0 print
+8
+
+> 9 1 fun dup 0 reverse swap % dup then ?1 ?run 24 10 0 print 1 run pop echo
+24 10
+2
+
+> 3 1 fun 0 100 rnd 3 2 fun 5 1 loop  7 3 fun dup2 <= then ?pop else ?swap ?pop 3 4 fun 4 3 loop  
+
+1 print 2 print 3 print 4 print 2 run 0 print 4 run 0 print
+0 100 rnd
+
+5 1 loop
+
+dup2 <= then ?pop else ?swap ?pop
+
+4 3 loop
+
+34 96 12 48 25
+12
